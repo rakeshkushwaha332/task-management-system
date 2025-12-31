@@ -1,0 +1,223 @@
+.signup-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f7ff 0%, #e0ecff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.signup-card {
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 25px 50px rgba(37, 99, 235, 0.18);
+  width: 100%;
+  max-width: 480px;
+  overflow: hidden;
+  border: 1px solid #dbeafe;
+}
+
+.signup-header {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem 2.5rem;
+}
+
+.signup-header h2 {
+  margin: 0 0 0.8rem;
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.signup-header p {
+  margin: 0;
+  opacity: 0.95;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.signup-form {
+  padding: 2.5rem 2.5rem 3rem;
+}
+
+.form-group {
+  margin-bottom: 1.75rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.65rem;
+  font-weight: 600;
+  color: #1e40af;
+  font-size: 0.98rem;
+  letter-spacing: 0.1px;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border: 1.8px solid #93c5fd;
+  border-radius: 14px;
+  font-size: 1.05rem;
+  background-color: #f8fbff;
+  transition: all 0.35s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #2563eb;
+  background-color: white;
+  box-shadow: 0 0 0 5px rgba(37, 99, 235, 0.22);
+  transform: translateY(-1px);
+}
+
+.form-group input::placeholder {
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.form-group select {
+  cursor: pointer;
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' fill='%233b82f6' viewBox='0 0 16 16'%3E%3Cpath d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 18px center;
+  background-size: 12px;
+  padding-right: 48px;
+}
+
+.signup-btn {
+  width: 100%;
+  padding: 1.1rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: all 0.35s ease;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  letter-spacing: 0.3px;
+}
+
+.signup-btn:hover:not(:disabled) {
+  background: #1d4ed8;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.45);
+}
+
+.signup-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.spinner {
+  width: 22px;
+  height: 22px;
+  border: 2.5px solid transparent;
+  border-top: 2.5px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.footer-prompt {
+  text-align: center;
+  padding: 1.8rem 2.5rem;
+  background: #f8fbff;
+  font-size: 1rem;
+  color: #64748b;
+  border-top: 1px solid #e0e7ff;
+}
+
+.footer-prompt .login-link {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 0.4rem;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+}
+
+.footer-prompt .login-link:hover {
+  color: #1d4ed8;
+  background-color: #eff6ff;
+  text-decoration: underline;
+}
+
+/* Responsive Improvements */
+@media (max-width: 480px) {
+  .signup-wrapper {
+    padding: 1rem;
+  }
+
+  .signup-card {
+    margin: 0.5rem;
+    border-radius: 20px;
+    max-width: none;
+  }
+
+  .signup-header {
+    padding: 2.5rem 1.5rem 2rem;
+  }
+
+  .signup-header h2 {
+    font-size: 1.9rem;
+  }
+
+  .signup-header p {
+    font-size: 1rem;
+  }
+
+  .signup-form {
+    padding: 2rem 1.8rem 2.5rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.6rem;
+  }
+
+  .form-group input,
+  .form-group select {
+    padding: 1rem 1.1rem;
+    font-size: 1rem;
+  }
+
+  .signup-btn {
+    padding: 1.05rem;
+    font-size: 1.1rem;
+  }
+
+  .footer-prompt {
+    padding: 1.6rem 1.8rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .signup-header {
+    padding: 2rem 1.2rem 1.8rem;
+  }
+
+  .signup-form {
+    padding: 1.8rem 1.5rem;
+  }
+}

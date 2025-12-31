@@ -1,0 +1,373 @@
+.login-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f7ff 0%, #e0ecff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.login-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15);
+  width: 100%;
+  max-width: 420px;
+  overflow: hidden;
+  border: 1px solid #dbeafe;
+}
+
+.login-header {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 2.5rem 2rem 2rem;
+}
+
+.login-header h2 {
+  margin: 0 0 0.75rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.login-header p {
+  margin: 0;
+  opacity: 0.95;
+  font-size: 1.05rem;
+}
+
+.login-form {
+  padding: 2rem 2rem 2.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.6rem;
+  font-weight: 600;
+  color: #1e40af;
+  font-size: 0.95rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.95rem 1.1rem;
+  border: 1.5px solid #93c5fd;
+  border-radius: 12px;
+  font-size: 1rem;
+  background-color: #f8fbff;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #2563eb;
+  background-color: white;
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, 0.18);
+}
+
+.form-group input::placeholder {
+  color: #9ca3af;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 1rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.login-btn:hover:not(:disabled) {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(37, 99, 235, 0.4);
+}
+
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 2px solid transparent;
+  border-top: 2px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.footer-prompt {
+  text-align: center;
+  padding: 1.5rem 2rem;
+  background: #f8fbff;
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+.footer-prompt .signup-link {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 0.35rem;
+  transition: color 0.2s;
+}
+
+.footer-prompt .signup-link:hover {
+  color: #1d4ed8;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-card {
+    margin: 1rem;
+    border-radius: 16px;
+  }
+
+  .login-header {
+    padding: 2rem 1.5rem 1.8rem;
+  }
+
+  .login-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .login-form {
+    padding: 1.8rem 1.5rem 2.2rem;
+  }
+
+  .footer-prompt {
+    padding: 1.5rem;
+  }
+}
+
+
+
+
+.login-wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #f0f7ff 0%, #e0ecff 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.login-card {
+  background: white;
+  border-radius: 24px;
+  box-shadow: 0 25px 50px rgba(37, 99, 235, 0.18);
+  width: 100%;
+  max-width: 460px;
+  overflow: hidden;
+  border: 1px solid #dbeafe;
+}
+
+.login-header {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 3rem 2rem 2.5rem;
+}
+
+.login-header h2 {
+  margin: 0 0 0.8rem;
+  font-size: 2.1rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.login-header p {
+  margin: 0;
+  opacity: 0.95;
+  font-size: 1.05rem;
+  font-weight: 500;
+}
+
+.login-form {
+  padding: 2.5rem 2.5rem 2rem;
+}
+
+.form-group {
+  margin-bottom: 1.75rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.65rem;
+  font-weight: 600;
+  color: #1e40af;
+  font-size: 0.98rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 1rem 1.2rem;
+  border: 1.8px solid #93c5fd;
+  border-radius: 14px;
+  font-size: 1.05rem;
+  background-color: #f8fbff;
+  transition: all 0.35s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #2563eb;
+  background-color: white;
+  box-shadow: 0 0 0 5px rgba(37, 99, 235, 0.22);
+  transform: translateY(-1px);
+}
+
+.form-group input::placeholder {
+  color: #9ca3af;
+  font-weight: 500;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 1.1rem;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 14px;
+  font-size: 1.15rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.35s ease;
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+  letter-spacing: 0.3px;
+}
+
+.login-btn:hover:not(:disabled) {
+  background: #1d4ed8;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 30px rgba(37, 99, 235, 0.45);
+}
+
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.spinner {
+  width: 22px;
+  height: 22px;
+  border: 2.5px solid transparent;
+  border-top: 2.5px solid white;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.footer-prompt {
+  text-align: center;
+  padding: 1.8rem 2.5rem;
+  background: #f8fbff;
+  font-size: 1rem;
+  color: #64748b;
+  border-top: 1px solid #e0e7ff;
+}
+
+.footer-prompt .signup-link {
+  color: #2563eb;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 0.4rem;
+  padding: 2px 6px;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.footer-prompt .signup-link:hover {
+  color: #1d4ed8;
+  background-color: #eff6ff;
+  text-decoration: underline;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 480px) {
+  .login-wrapper {
+    padding: 1rem;
+  }
+
+  .login-card {
+    margin: 0.5rem;
+    border-radius: 20px;
+    max-width: none;
+  }
+
+  .login-header {
+    padding: 2.5rem 1.8rem 2rem;
+  }
+
+  .login-header h2 {
+    font-size: 1.9rem;
+  }
+
+  .login-header p {
+    font-size: 1rem;
+  }
+
+  .login-form {
+    padding: 2rem 1.8rem 1.8rem;
+  }
+
+  .form-group {
+    margin-bottom: 1.6rem;
+  }
+
+  .login-btn {
+    padding: 1.05rem;
+    font-size: 1.1rem;
+  }
+
+  .footer-prompt {
+    padding: 1.6rem 1.8rem;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 360px) {
+  .login-header {
+    padding: 2rem 1.5rem 1.8rem;
+  }
+
+  .login-form {
+    padding: 1.8rem 1.5rem;
+  }
+}
