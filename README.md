@@ -88,6 +88,25 @@ The system allows **authorized users** to manage tasks efficiently, while suppor
   * 🟢 Low – Green
 * Visual indicators using colored text, backgrounds, and borders
 
+### 10 Screenshots
+Login Page 
+<img width="1915" height="958" alt="image" src="https://github.com/user-attachments/assets/c4b1a3a6-a902-4e7e-aee7-1de7f4ca275c" />
+
+
+Sign Up page
+<img width="1898" height="1011" alt="image" src="https://github.com/user-attachments/assets/1e1ebb1d-adde-4ebb-9965-1bc9ba1e0364" />
+
+Admin Pannel
+<img width="1896" height="968" alt="image" src="https://github.com/user-attachments/assets/98fc0a14-2deb-4967-b876-548bbf1455a3" />
+
+
+
+User Page 
+<img width="1908" height="958" alt="image" src="https://github.com/user-attachments/assets/a9b36811-2fdc-4b24-8e56-68d411a376af" />
+
+
+
+
 ---
 
 ## 📁 Folder Structure
