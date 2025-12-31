@@ -112,32 +112,77 @@ User Page
 ## 📁 Folder Structure
 
 ```text
-src/
-├── components/
-│   └── TaskDetails.jsx          # Task detail modal/view
-├── pages/
-│   ├── Login.jsx
-│   ├── Signup.jsx
-│   ├── Dashboard.jsx            # Admin dashboard
-│   ├── CreateTask.jsx
-│   ├── EditTask.jsx
-│   └── ...
-├── services/
-│   └── api.js                   # Axios instance & interceptors
-├── style/
-│   ├── Login.css
-│   ├── Signup.css
-│   ├── Dashboard.css
-│   ├── CreateTask.css
-│   ├── EditTask.css
-│   ├── TaskDetail.css
-│   └── ...
-├── App.jsx                      # Routing & protected routes
-├── main.jsx                     # Vite entry point
-└── index.css                    # Global styles
+Task-Management-System-main
+│
+├── README.md
+│
+├── frontend
+│   ├── .gitignore
+│   ├── eslint.config.js
+│   ├── index.html
+│   ├── package.json
+│   ├── package-lock.json
+│   ├── README.md
+│   ├── vite.config.js
+│   │
+│   ├── public
+│   │   └── vite.svg
+│   │
+│   └── src
+│       ├── App.css
+│       ├── App.jsx
+│       ├── index.css
+│       ├── main.jsx
+│       │
+│       ├── assets
+│       │   └── react.svg
+│       │
+│       ├── components
+│       │   ├── CreateTask.jsx
+│       │   ├── Pagination.jsx
+│       │   └── PrivateRoute.jsx
+│       │
+│       ├── pages
+│       │   ├── Dashboard.jsx
+│       │   ├── EditTask.jsx
+│       │   ├── Login.jsx
+│       │   ├── Signup.jsx
+│       │   ├── Signup.css
+│       │   ├── TaskDetails.jsx
+│       │   └── UserDashboard.jsx
+│       │
+│       ├── services
+│       │   └── api.js
+│       │
+│       └── style
+│           ├── CreateTask.css
+│           ├── Dashboard.css
+│           ├── EditTask.css
+│           ├── Login.css
+│           └── TaskDetail.css
+│
+└── server
+    ├── .env
+    ├── .gitignore
+    ├── package.json
+    ├── package-lock.json
+    ├── server.js
+    │
+    ├── config
+    │   └── db.js
+    │
+    ├── middleware
+    │   ├── admin.js
+    │   └── auth.js
+    │
+    ├── models
+    │   ├── Task.js
+    │   └── User.js
+    │
+    └── routes
+        ├── auth.js
+        └── tasks.js
 
-public/
-└── vite.svg
 ```
 
 ---
